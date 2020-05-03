@@ -1,0 +1,201 @@
+@font-face {
+  font-family: myEnglishFont;
+  src: url("./Canterbury.ttf");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "myEnglishFont";
+  color: white;
+}
+
+.header {
+  min-height: 70px;
+  background-color: #29ba14;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.header .logo {
+  font-size: 2.6rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+}
+.header .login-form {
+  display: flex;
+  align-items: baseline;
+  /* justify-content: center; */
+}
+.header .single-login-group {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  flex-grow: 0;
+  margin: 0 5px;
+}
+
+.single-login-group input {
+  height: 25px;
+}
+.single-login-group a {
+  color: white;
+  text-decoration: none;
+}
+.single-login-group input[type="submit"] {
+  background-color: #138102;
+  color: white;
+  font-family: "myEnglishFont";
+  border: none;
+  padding: 3px 15px;
+  cursor: pointer;
+}
+.header .single-login-group label {
+  font-size: 1.09rem;
+  color: white;
+}
+
+section {
+  width: 100%;
+  background: url("./background.jpg");
+  height: calc(100vh - 140px);
+  display: flex;
+}
+
+.recent-logins-area {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  /* background-color: green; */
+}
+.recent-logins-area h1 {
+  font-size: 2.5rem;
+  color: white;
+  margin-top: 15px;
+}
+.recent-logins-area h3 {
+  font-size: 1.8rem;
+  margin-top: 15px;
+}
+.recent-logins {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 15px;
+}
+.single-login {
+  width: 150px;
+  height: 200px;
+  background-color: white;
+  text-align: center;
+  border-radius: 6px;
+  margin-top: 15px;
+  color: #29ba14;
+  position: relative;
+}
+.single-login span {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background-color: rgb(219, 214, 214);
+  color: red;
+  padding: 0 5px;
+  border-radius: 50%;
+  text-align: center;
+  font-weight: bold;
+  cursor: pointer;
+}
+.single-login h3 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+.single-login img {
+  width: 100%;
+  height: 80%;
+}
+.register-form-area {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: flex-start;
+  width: 40%;
+  /* background-color: yellow; */
+}
+.register-form-area form {
+  width: 70%;
+  /* background-color: red; */
+}
+.register-form-area h1,
+.register-form-area h3 {
+  margin-top: 15px;
+}
+.register-form-area h1 {
+  font-size: 2.5rem;
+}
+.register-form-area h3 {
+  font-size: 1.8rem;
+}
+
+.input-group input:first-of-type {
+  margin-right: 7px;
+}
+.input-group input[type="text"],
+.input-group input[type="password"] {
+  height: 35px;
+  border-radius: 5px;
+  outline: none;
+  border: 0.5px;
+  width: 100%;
+}
+.input-group input::placeholder {
+  padding-left: 15px;
+}
+.input-group {
+  margin: 7px 0;
+  display: flex;
+}
+
+.gender-input label,
+.birthday-input label {
+  font-size: 1.35rem;
+}
+.birthday-input .input-group select {
+  width: 25%;
+  height: 30px;
+  margin: 0 4px;
+  border-radius: 5px;
+  font-family: "myEnglishFont";
+}
+
+.gender-input .input-group {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.register-form-area form input[type="submit"] {
+  width: 150px;
+  background-color: #138102;
+  color: white;
+  font-family: "myEnglishFont";
+  padding: 5px 13px;
+  margin-top: 25px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-left: 15px;
+}
+
+.footer {
+  height: 70px;
+  background-color: #29ba14;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+}
